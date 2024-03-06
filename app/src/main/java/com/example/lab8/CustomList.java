@@ -88,4 +88,16 @@ public class CustomList extends ArrayAdapter<City> {
             throw new IllegalArgumentException("That city doesn't exist.");
         }
     }
+
+    /**
+     * This is a function that counts the number of cities in the cityList.
+     * @return Return the number of cities in the list as int type.
+     */
+    public int countCities() {
+        int count = 0;
+        for (City city : cities) {
+            count++;
+        }
+        return count;
+    }
 }
