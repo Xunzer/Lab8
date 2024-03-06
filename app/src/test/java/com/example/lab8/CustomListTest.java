@@ -57,7 +57,7 @@ public class CustomListTest {
      * Test on deleteCity() method when it functions perfectly.
      */
     @org.junit.Test
-    public void deletCityTest() {
+    public void deleteCityTest() {
         CustomList list = MockCityList();
         int listSize = list.getCount();
         Assert.assertEquals(listSize, list.getCount());
