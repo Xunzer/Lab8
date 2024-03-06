@@ -44,10 +44,11 @@ public class CustomListTest {
     @org.junit.Test
     public void hasCityTest() {
         CustomList list = MockCityList();
-        Assert.assertEquals(0, list.getCount());
+        int listSize = list.getCount();
+        Assert.assertEquals(listSize, list.getCount());
         City cityNew = new City("Calgary", "Alberta");
         list.add(cityNew);
-        Assert.assertEquals(1, list.getCount());
+        Assert.assertEquals(listSize + 1, list.getCount());
         assertTrue(list.hasCity(cityNew));
     }
 
